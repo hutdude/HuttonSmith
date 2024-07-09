@@ -41,6 +41,8 @@ const TrackFetcher = () => {
         );
 
         setTracks(fetchedTracks);
+        
+            console.log('tracks', tracks)
         setIsLoading(false);
       } catch (err) {
         setError(err.message);
@@ -53,10 +55,12 @@ const TrackFetcher = () => {
 
   if (isLoading) return <div>Loading tracks...</div>;
   if (error) return <div>Error: {error}</div>;
-
+  else{
+    console.log(tracks)
+  }
   return (
     <div>
-      {tracks.map((track, index) => (
+      {/* {tracks.map((track, index) => (
         <div key={index} className={`bg-[url(${track.image})] h-96 w-96 track-item`}>
           <h2>{track.name}</h2>
           <p>Artist: {track.artists.join(', ')}</p>
@@ -66,7 +70,7 @@ const TrackFetcher = () => {
             Listen on Spotify
           </a>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 };
