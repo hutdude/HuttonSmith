@@ -42,7 +42,7 @@ const TrackFetcher = () => {
 
         setTracks(fetchedTracks);
         
-            console.log('tracks', tracks)
+        console.log('tracks', tracks)
         setIsLoading(false);
       } catch (err) {
         setError(err.message);
