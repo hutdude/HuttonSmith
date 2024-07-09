@@ -29,12 +29,13 @@ const TrackFetcher = () => {
             "url":track.url
            }
             
-                makeRequest('https://songwhip.com/', 'POST', body,headers)
-                .then(data => console.log(data))
-                .catch(error => console.error(error));
+            makeRequest('https://songwhip.com/', 'POST', body,headers)
+            .then(data => {
+                console.log(data);
+                return(data);
+            })
+            .catch(error => console.error(error));
             
-            console.log(response)
-            return response;
             ;
           })
         );
@@ -56,7 +57,7 @@ const TrackFetcher = () => {
   return (
     <div>
       {tracks.map((track, index) => (
-        <div key={index} className="track-item">
+        <div key={index} className={`bg-[url(${track.image})] h-96 w-96 track-item`}>
           <h2>{track.name}</h2>
           <p>Artist: {track.artists.join(', ')}</p>
           <p>Album: {track.album}</p>
