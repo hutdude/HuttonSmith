@@ -4,55 +4,65 @@ import '../styles.css'
 import { RiYoutubeLine } from "react-icons/ri"; 
 import { FaInstagram } from "react-icons/fa";
 import 'animate.css'
+import Work from '../sections/work';
 
 
 
 export default function Landing() {
         const [activeSection, setActiveSection] = useState(1);
-  const [scrollPosition, setScrollPosition] = useState(0);
+        const [scrollPosition, setScrollPosition] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition(window.scrollY);
-    };
-
-    // Listen to scroll events
-    window.addEventListener('scroll', handleScroll);
-
-    // Clean up event listener on component unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    // Determine which section to activate based on scroll position
-    if (scrollPosition > 1400) {
-      setActiveSection(5);
-    } else if (scrollPosition > 1000) {
-        setActiveSection(4);
-      } else if (scrollPosition > 600) {
-      setActiveSection(3);
-    } else if (scrollPosition > 200) {
-        
-      setActiveSection(2);
-    } 
-
-    else{
-        setActiveSection(0)
-    }
-  }, [scrollPosition]);
-
-  // Function to open the modal
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  // Function to close the modal
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
+      
+        useEffect(() => {
+          const handleScroll = () => {
+            setScrollPosition(window.scrollY);
+          };
+      
+          window.addEventListener('scroll', handleScroll);
+      
+          return () => {
+            window.removeEventListener('scroll', handleScroll);
+          };
+        }, []);
+      
+        useEffect(() => {
+          if (scrollPosition > 1400) {
+            setActiveSection(5);
+          } else if (scrollPosition > 1000) {
+            setActiveSection(4);
+          } else if (scrollPosition > 600) {
+            setActiveSection(3);
+          } else if (scrollPosition > 200) {
+            setActiveSection(2);
+          } else {
+            setActiveSection(0);
+          }
+        }, [scrollPosition]);
+      
+        const scrollToSection = (sectionNumber) => {
+          let targetPosition;
+          switch(sectionNumber) {
+            case 2:
+              targetPosition = 201;
+              break;
+            case 3:
+              targetPosition = 601;
+              break;
+            case 4:
+              targetPosition = 1001;
+              break;
+            case 5:
+              targetPosition = 1401;
+              break;
+            default:
+              targetPosition = 0;
+          }
+      
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'instant'
+          });
+        };
  
 
     return(
@@ -81,17 +91,17 @@ export default function Landing() {
                         <div className='flex text-shadow text-lg flex-col space-y-8'>
 
                                 
-                                <a className='hover:cursor-pointer hover:scale-110 ' onClick={() => setActiveSection(2)}>
+                                <a className='hover:cursor-pointer hover:scale-110 ' onClick={() => scrollToSection(2)}>
                                         <h1>about</h1>
                                 </a>
-                                <a className='hover:cursor-pointer hover:scale-110 'onClick={() => setActiveSection(3)}>
+                                <a className='hover:cursor-pointer hover:scale-110 'onClick={() => scrollToSection(3)}>
                                         <h1>work</h1>
                                 </a>
-                                <a className='hover:cursor-pointer hover:scale-110 ' onClick={() => setActiveSection(4)}>
+                                <a className='hover:cursor-pointer hover:scale-110 ' onClick={() => scrollToSection(4)}>
                                         <h1>services</h1>
                                 </a>
                                 
-                                <a className='hover:cursor-pointer hover:scale-110 ' onClick={() => setActiveSection(5)}>
+                                <a className='hover:cursor-pointer hover:scale-110 ' onClick={() => scrollToSection(5)}>
                                         <h1>contact</h1>
                                 </a>
                         </div>
@@ -105,7 +115,7 @@ export default function Landing() {
                 
 
                 {/* Section 2 */}
-                <div id="about" className={` h-full w-full top-1/2 left-1/2 absolute transform -translate-x-1/2 -translate-y-1/2 Z-30 transition-opacity duration-500 backdrop-blur ${activeSection === 2 ? 'opacity-100' : 'opacity-0'}`}>
+                <div id="about" className={` h-full w-1/4 top-1/2 left-1/2 absolute rounded-lg transform -translate-x-1/2 bg-white -translate-y-1/2 Z-30 transition-opacity duration-500 backdrop-blur ${activeSection === 2 ? 'opacity-100' : 'opacity-0'}`}>
                         <div className="flex items-center h-full justify-center">
                         <h1 className="text-4xl font-bold">About</h1>
                         </div>
@@ -114,7 +124,7 @@ export default function Landing() {
                 {/* Section 3 */}
                 <div id="work" className={`h-full w-full absolute top-0 left-0 backdrop-blur transition-opacityg duration-500 ${activeSection === 3 ? 'opacity-100' : 'opacity-0'}`}>
                         <div className="flex items-center h-full justify-center">
-                        <h1 className="text-4xl font-bold">Work</h1>
+                                <Work/>
                         </div>
                 </div>
 
