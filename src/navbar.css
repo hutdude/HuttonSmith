@@ -1,0 +1,11 @@
+.social-item {
+    @apply hover:scale-105
+}
+
+.menu-item{
+    @apply text-lg
+}
+
+.section-menu-item {
+    @apply rounded-full px-4 hover:shadow-lg hover:bg-gray-300 transition-all
+}

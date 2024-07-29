@@ -343,14 +343,14 @@ const TrackFetcher = () => {
 ]
 
   return (
-<div className=' grid grid-cols-1 xl:grid-cols-4 gap-8 auto-rows-auto'>
-  {tracksProd.map((track, index) => (
+<div className=' grid grid-cols-1 xl:grid-cols-4  auto-rows-auto'>
+  {!isLoading && tracksData.length > 0 ? tracksData.map((track, index) => (
     <a 
       key={index}
       href={track.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="relative h-[200px] w-[200px] md:w-[280px] md:h-[280px] overflow-hidden group cursor-pointer block"
+      className="relative h-full w-full aspect-square  overflow-hidden group cursor-pointer block"
       style={{zIndex: 1}}
     >
       <div 
@@ -365,7 +365,7 @@ const TrackFetcher = () => {
         <p className=' italic'>{track.credits.join(', ')}</p>
       </div>
     </a>
-  ))}
+  )) : <></>}
 </div>
   );
 };
