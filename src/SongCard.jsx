@@ -343,8 +343,8 @@ const TrackFetcher = () => {
 ]
 
   return (
-<div className=' grid grid-cols-1 xl:grid-cols-4  auto-rows-auto'>
-  {!isLoading && tracksData.length > 0 ? tracksData.map((track, index) => (
+<div className=' grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 grid-cols-2  auto-rows-auto'>
+  {!isLoading && tracksData.length > 0 ? tracksProd.map((track, index) => (
     <a 
       key={index}
       href={track.url}

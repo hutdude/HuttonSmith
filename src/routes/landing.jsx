@@ -8,6 +8,9 @@ import Work from '../sections/work'
 import Services from '../sections/services';
 import Navbar from '../Navbar';
 import gif from '../assets/fav.gif'
+import SpotifyAlbumGrid from '../sections/SpotifyDisplay';
+import Contact from '../sections/contact';
+
 
 
 export default function Landing() {
@@ -20,8 +23,8 @@ return (
                         
         <Navbar />
                         {/* Background Image */}
-                        <div className="absolute w-full h-full inset-0 z-0">
-                                <img className='w-full h-screen object-cover z-0' src={bgimg} alt="Background" />
+                        <div className="absolute w-full h-fit inset-0 ">
+                                <img className='w-full h-screen object-cover ' src={bgimg} alt="Background" />
                                 
                         </div>
                         {/* Sections */}
@@ -34,17 +37,15 @@ return (
                         <section id="work" className='py-32' >
                                 <h2 className='text-white font-bold text-center text-3xl'>recent projects</h2>
                                 <div >
-                                        <Work />
+                                        <SpotifyAlbumGrid />
+                                        {/* <Work /> */}
                                 </div>
                         </section>
-                        <section id="services" className="min-h-screen flex items-center justify-center p-6 md:p-12">
+                        <section id="services" className="min-h-screen bg-white flex items-center justify-center p-6 md:p-12">
                                 <Services />
                         </section>
-                        <section id="contact" className="min-h-screen flex items-center justify-center p-6 md:p-12">
-                        <div className="bg-white bg-opacity-80 text-black p-8 rounded-lg">
-                                <h2 className="text-4xl font-bold mb-4">Contact</h2>
-                                <p>Your contact content goes here...</p>
-                        </div>
+                        <section id="contact" className="min-h-screen bg-white flex items-center justify-center p-6 md:p-12">
+                        <Contact />
                         </section>
                 </main>
                 </div>
