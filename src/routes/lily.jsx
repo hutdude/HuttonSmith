@@ -8,11 +8,11 @@ const Lily = () => {
 
   const passwordSets = [
     { 
-      password: 'fleshwater', 
-      hint: "Wow this band is so underground.\nIKR, almost as underground as that plizzard band.\nI heard the bass player met his gf as that show.\nNo way?\n Yeah, seriously.\nI'll never understand how he got her, she's so much cooler and way more fashionable than he is.\nPlus he doesn't even know what a marsupial is!" 
+      password: 'deftones', 
+      hint: "Wow this band is so underground.\nIKR, almost as underground as that plizzard band.\nI heard the bass player met his gf as that show.\nNo way?\n Yeah, seriously.\nI'll never understand how he got her, she's so much cooler and way more fashionable than he is.\nPlus he doesn't even know what a marsupial is!\nWow, what an idiot. At least he's got brains enough to pick a good one." 
     },
     { 
-      password: 'deftones', 
+      password: 'fleshwater', 
       hint: 'Ya know, apparently that bass player thought she had a boyfriend at the time.\n Did she not?\n The story is a bit unclear there. All we know is that they both dropped everything to get together.\nWow, how awesome. It all worked out! \nI know! But youre skipping to the end. The bass player went with the drummer to some restaraunt to pout and mope that his dream girl was already taken. Sources are still unclear on what that restaraunt was.' 
     },
     { 
@@ -40,6 +40,7 @@ const Lily = () => {
 
   const renderWithLineBreaksAndColors = (text) => {
     const colors = ['text-blue-600', 'text-pink-600'];
+    const align = ['text-right', 'text-left']
     return text.split('\n').map((line, index) => (
       <React.Fragment key={index}>
         <span className={colors[index % 2]}>{line}</span>
@@ -54,7 +55,7 @@ const Lily = () => {
       
     >
       {isWelcomeScreen ? (
-        <div className="bg-white bg-opacity-75 flex flex-col items-center space-y-4">
+        <div className=" flex flex-col items-center space-y-4">
           <h1 className="text-3xl font-bold text-pink-600">Get ready for a one year unga bunga baga booga dappty ditty doo scavenger hunt made just for you!</h1>
           <button
             onClick={handleWelcomeButtonClick}
@@ -84,7 +85,7 @@ const Lily = () => {
                 </button>
               </form>
 
-              <div className="mt-4 bg-white bg-opacity-75  text-xl font-semibold">
+              <div className="mt-4   text-xl font-semibold">
                 {renderWithLineBreaksAndColors(passwordSets[passwordsEntered].hint)}
               </div>
             </>
