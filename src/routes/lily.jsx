@@ -17,7 +17,7 @@ const Lily = () => {
     },
     { 
       password: 'ring', 
-      hint: 'Lucky for our bass player, that girl was into him too.\n How dreamy!\n Yes, yes it was. They chatted often, calling for hours on end to talk about anything. After about a month of flirting, talking, and growing a relationship, that bass player decided he was in.\n He wanted to date officially?\n Thats correct. But, get this: He gave her a ring and let her know he wanted to be official!\n NO WAY WHAT A COP OUT\nTsk tsk, a boy should know it takes more than to just ring a girl up' 
+      hint: 'Lucky for our bass player, that girl was into him too.\n How dreamy!\n Yes, yes it was. They chatted often, calling for hours on end to talk about anything. After about a month of flirting, talking, and growing a relationship, that bass player was all in!\n He wanted to date officially?\n Thats correct. But, get this: He gave her a ring and let her know he wanted to be official!\n NO WAY WHAT A COP OUT\nTsk tsk, a boy should know it takes more than to just ring a girl up' 
     }
   ];
 
