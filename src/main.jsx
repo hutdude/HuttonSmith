@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import Landing from "./routes/landing";
+import Lily from "./routes/lily";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -8,10 +9,15 @@ import {
 import "./index.css";
 
 const router = createBrowserRouter([
+  // {
+  //   path: "/",
+  //   element: <Landing />,
+  // },
   {
+
     path: "/",
-    element: <Landing />,
-  },
+    element: <Lily />
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
