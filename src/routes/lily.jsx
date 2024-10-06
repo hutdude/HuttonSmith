@@ -8,12 +8,12 @@ const Lily = () => {
 
   const passwordSets = [
     { 
-      password: 'deftones', 
+      password: 'fleshwater', 
       hint: "Wow this band is so underground.\nIKR, almost as underground as that plizzard band.\nI heard the bass player met his gf as that show.\nNo way?\n Yeah, seriously.\nI'll never understand how he got her, she's so much cooler and way more fashionable than he is.\nPlus he doesn't even know what a marsupial is!\nWow, what an idiot. At least he's got brains enough to pick a good one." 
     },
     { 
-      password: 'fleshwater', 
-      hint: 'Ya know, apparently that bass player thought she had a boyfriend at the time.\n Did she not?\n The story is a bit unclear there. All we know is that they both dropped everything to get together.\nWow, how awesome. It all worked out! \nI know! But youre skipping to the end. The bass player went with the drummer to some restaraunt to pout and mope that his dream girl was already taken. Sources are still unclear on what that restaraunt was.' 
+      password: 'deftones', 
+      hint: 'Ya know, apparently that bass player thought she had a boyfriend at the time.\n ooo she did?\n The story is a bit unclear there. All we know is that they both dropped everything to get together.\nWow, how awesome. It all worked out! \nI know! But youre skipping to the end. The bass player went with the drummer to some restaraunt to pout and mope that his dream girl was already taken. Sources are still unclear on what that restaraunt was, but sometimes they talk about getting in the pit? We might have confused two different parts of their culture.' 
     },
     { 
       password: 'ring', 
