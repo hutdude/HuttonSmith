@@ -9,15 +9,10 @@ import {
 import "./index.css";
 
 const router = createBrowserRouter([
-  // {
-  //   path: "/",
-  //   element: <Landing />,
-  // },
-  {
-
-    path: "/",
-    element: <Lily />
-  }
+   {
+     path: "/",
+     element: <Landing />,
+   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
