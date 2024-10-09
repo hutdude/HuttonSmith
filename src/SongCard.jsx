@@ -344,7 +344,7 @@ const TrackFetcher = () => {
 
   return (
 <div className=' grid grid-cols-1 xl:grid-cols-4 gap-8 auto-rows-auto'>
-  {tracksProd.map((track, index) => (
+  {tracks.map((track, index) => (
     <a 
       key={index}
       href={track.url}
