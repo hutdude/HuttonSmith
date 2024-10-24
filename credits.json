@@ -1,15 +1,33 @@
 [
   {
     "spotifyLink": "https://open.spotify.com/track/2EzTmDyBVtOrartqR96knX?si=fa60bd8b44eb4d75",
-    "credits": ["mixing", "mastering", "production", "bass guitar"]
+    "credits": [
+      "mixing",
+      "mastering",
+      "production",
+      "songwriting",
+      "bass guitar"
+    ]
   },
 
   {
     "spotifyLink": "https://open.spotify.com/track/2uvwCCSJOmcKnUOR5kC9X9?si=6dff3a3a3b824ee9",
-    "credits": ["mixing", "mastering", "production", "bass guitar"]
+    "credits": [
+      "mixing",
+      "mastering",
+      "production",
+      "songwriting",
+      "bass guitar"
+    ]
   },
   {
     "spotifyLink": "https://open.spotify.com/track/05mMyEb1ZGMLC8VPzzH8tp?si=a60b5791409c44bc",
-    "credits": ["mixing", "mastering", "production", "bass guitar"]
+    "credits": [
+      "mixing",
+      "mastering",
+      "production",
+      "songwriting",
+      "bass guitar"
+    ]
   }
 ]

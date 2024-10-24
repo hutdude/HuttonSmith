@@ -55,23 +55,23 @@ const SpotifyGrid = () => {
 
   return (
     <div className="w-full max-w-7xl mx-auto p-4">
-        <h2 className='z-30 text-center text-4xl'>previous work</h2>
-      <div className="z-30 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <h2 className='z-30 text-center text-4xl'>recent projects</h2>
+      <div className="z-30 px-4 lg:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
         {CreditsData.map((item, index) => (
           <div 
             key={index} 
             className="rounded-lg overflow-hidden"
           >
-            <div className="p-4">
+            <div className="p-2">
               <iframe
                 src={getSpotifyEmbedUrl(item.spotifyLink)}
                 width="100%"
                 height="352"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
-                className="mb-4"
+                className="mb-2"
               />
-              <div className="flex flex-wrap">
+              <div className="flex justify-center flex-wrap">
                 {item.credits.map((credit, idx) => (
                   <CreditPill className="hover:scale-110 z-30" key={idx} credit={credit} />
                 ))}
