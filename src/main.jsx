@@ -1,7 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import Landing from "./routes/landing";
-import Lily from "./routes/lily";
 import {
   createBrowserRouter,
   RouterProvider,

@@ -17,6 +17,7 @@ export default {
     },
   },
   plugins: [
+    require('@tailwindcss/forms'),
     // Register a plugin to add text shadow utilities
     plugin(function ({ addUtilities }) {
       const newUtilities = {
