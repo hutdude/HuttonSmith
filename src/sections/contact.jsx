@@ -7,7 +7,7 @@ export default function ContactForm() {
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Contact me</h2>
           <p className="mt-2 text-lg leading-8 text-gray-600">Let's take your music to the next level!</p>
-        </div>
+        </div>  
         <form method="POST" name="contact-form" data-netlify="true" data-netlify-honeypot="bot-field" className="mx-auto mt-16 max-w-xl sm:mt-20">
           {/* Hidden field for bot protection */}
           <input type="hidden" name="form-name" value="contact-form" />

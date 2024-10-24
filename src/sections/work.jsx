@@ -38,7 +38,7 @@ const CreditPill = ({ credit }) => {
   const colorClasses = creditColors[credit.toLowerCase()] || defaultColor;
   
   return (
-    <span className={`cursor-default inline-block px-3 py-1 text-sm font-medium rounded-full mr-2 mb-2 transition-colors ${colorClasses}`}>
+    <span className={`hover:scale-105 cursor-default inline-block px-3 py-1 text-sm font-medium rounded-full mr-2 mb-2 transition-colors ${colorClasses}`}>
       {credit}
     </span>
   );
