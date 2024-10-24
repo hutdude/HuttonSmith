@@ -1,4 +1,4 @@
-import bgimg from '../assets/Background.jpg'
+import bgimg from '../assets/Background.webp'
 import React, { useState, useEffect, useRef } from 'react';
 import '../styles.css'
 import { RiYoutubeLine } from "react-icons/ri"; 

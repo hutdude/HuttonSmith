@@ -96,25 +96,25 @@ export default function Services() {
           <div className="mx-auto w-full  grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:pr-8 px-6 lg:px-8 lg:pt-4">
               <div className="lg:max-w-lg">
-                <h2 className="text-base font-semibold leading-7 text-indigo-600">personalized production</h2>
-                <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">a musician's mindset</p>
-                <p className="mt-6 text-lg leading-8 text-gray-600">As a fellow musician, I treat your music with the care and attention I want mine to be treated. What sets me apart is my attention to details: I won't cut coners at any step of the process.</p>
+                <h2 className="text-base font-semibold leading-7 text-indigo-600">"music-first" production</h2>
+                <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">what I offer</p>
+                <p className="mt-6 text-lg leading-8 text-gray-600">As a fellow musician, I treat your music with the care and attention I want mine to be treated. What sets me apart is my attention to detail: I don't cut coners at any step of the process.</p>
                 <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                   <div className="relative pl-9">
                     <dt className="inline font-semibold text-gray-900">
                         <MdAlbum className="absolute left-1 top-1 h-5 w-5 text-indigo-600" />
-                      full personalized production: 
+                      fully personalized production: 
                     </dt>
-                    <dd className="inline"> whether your sonic goals are modern and punchy or raw and powerful, let's take your song/EP/LP from conception to released</dd>
+                    <dd className="inline"> whether your sonic goals are modern and punchy or raw and powerful, my goal is to most accurately instantiate your artistic vision</dd>
                   </div>
                   <div className="relative pl-9">
                     <dt className="inline font-semibold text-gray-900">
                       <svg className="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                         <path fillRule="evenodd" d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z" clipRule="evenodd" />
                       </svg>
-                      SSL certificates.
+                      full-stack: 
                     </dt>
-                    <dd className="inline">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</dd>
+                    <dd className="inline"> from pre-pro to mastering, I work with you at every step to shape your song/EP/LP from conception to release</dd>
                   </div>
                   <div className="relative pl-9">
                     <dt className="inline font-semibold text-gray-900">
@@ -129,7 +129,7 @@ export default function Services() {
                 </dl>
               </div>
             </div>
-            <img className="w-full max-h-screen object-cover" src={bulldog_bash_action_shot2} />
+            <img loading="lazy" className="w-full max-h-screen object-cover" src={bulldog_bash_action_shot2} />
           </div>
         </div>
       </div>)
