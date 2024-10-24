@@ -53,10 +53,10 @@ export default function Landing() {
       </div>
 
       {/* Header with navigation */}
-      <header className="fixed top-0 left-0 right-0 z-50 p-6 md:px-12 md:py-4 bg-black bg-opacity-80">
+      <header className="fixed  top-0 left-0 right-0 z-50 p-6 md:px-12 md:py-4 bg-black bg-opacity-80">
         <div className="flex justify-between items-center">
           <div>
-            <h1 className="text-xl tracking-widest">HUTTON SMITH</h1>
+            <h1 className="text-3xl font-bold tracking-widest">HUTTON SMITH</h1>
             <h2 className="text-md">PRODUCER • MIXER • SONGWRITER</h2>
           </div>
 
@@ -73,8 +73,8 @@ export default function Landing() {
 
           {/* Navigation Links - visible on larger screens */}
           <nav className="hidden items-center md:flex space-x-6">
-            <a href="#work" className="hover:scale-110">work</a>
-            <a href="#about" className="hover:scale-110">about</a>
+            <a href="#listen" className="hover:scale-110">listen</a>
+            {/* <a href="#about" className="hover:scale-110">about</a> */}
             <a href="#services" className="hover:scale-110">services</a>
             <a href="#contact" className="hover:scale-110">contact</a>
             <a className='hover:scale-110 pl-4' target='_blank' href="https://www.youtube.com/channel/UCaDmbYdgKmINSukz-j1boQQ">
@@ -90,10 +90,10 @@ export default function Landing() {
         {menuOpen && (
           <div className="md:hidden mt-4">
             <ul className="flex flex-col space-y-4">
-              <li><a href="#work" className="text-lg" onClick={() => setMenuOpen(false)}>Work</a></li>
-              <li><a href="#about" className="text-lg" onClick={() => setMenuOpen(false)}>About</a></li>
-              <li><a href="#services" className="text-lg" onClick={() => setMenuOpen(false)}>Services</a></li>
-              <li><a href="#contact" className="text-lg" onClick={() => setMenuOpen(false)}>Contact</a></li>
+              <li><a href="#listen" className="text-lg" onClick={() => setMenuOpen(false)}>listen</a></li>
+              <li><a href="#about" className="text-lg" onClick={() => setMenuOpen(false)}>about</a></li>
+              <li><a href="#services" className="text-lg" onClick={() => setMenuOpen(false)}>services</a></li>
+              <li><a href="#contact" className="text-lg" onClick={() => setMenuOpen(false)}>contact</a></li>
               <li>
                 <div className='flex items-center justify-start gap-4'>
                         <a className='hover:scale-110' target='_blank' href="https://www.youtube.com/channel/UCaDmbYdgKmINSukz-j1boQQ">
@@ -113,18 +113,18 @@ export default function Landing() {
       <main className="mt-20 relative" style={{ zIndex: 1 }}>
         <div className='w-full h-screen'></div>
 
-        <section ref={workSectionRef} id="work" className=" min-h-screen flex items-center justify-center p-6 md:p-12 relative">
+        <section ref={workSectionRef} id="listen" className=" min-h-screen flex items-center justify-center p-6 md:p-12 relative">
           <div className="relative z-10">
             <SpotifyGrid />
           </div>
         </section>
         
-        <section id="about" className="min-h-screen flex items-center justify-center p-6 md:p-12 relative">
-          <div className="bg-white bg-opacity-80 text-black p-8 rounded-lg">
+        {/* <section id="about" className=" w-full   relative">
+          <div className="bg-white w-full bg-opacity-80 text-black p-8 rounded-lg">
             <h2 className="text-4xl font-bold mb-4">About</h2>
-            <p>Your about content goes here...</p>
+            <p>Hutton Smith is a producer, mix engineer, songwriter, and bass player located in Nashville, TN.  </p>
           </div>
-        </section>
+        </section> */}
 
         <section id="services" className="min-h-screen w-full flex items-center justify-center relative">
           <Services />

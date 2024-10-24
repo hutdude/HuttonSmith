@@ -4,7 +4,11 @@ import bulldog_bash_action_shot2 from '../assets/BulldogBashAction2.webp';
 import state_theatre from '../assets/StateTheatre.webp';
 import ricks from '../assets/Ricks.webp';
 
+import noise from '../assets/bedge-grunge.png';
+
 import { MdAlbum } from "react-icons/md";
+import { PiFadersBold } from "react-icons/pi";
+import { FaSpotify } from "react-icons/fa";
 
 const Carasel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -91,10 +95,13 @@ const Carasel = () => {
 
 export default function Services() {
     return(
-    <div className="overflow-hidden w-full bg-gray-300 ">
+    <div className="overflow-hidden w-full bg-white ">
         <div className="mx-auto w-full">
           <div className="mx-auto w-full  grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-            <div className="lg:pr-8 px-6 lg:px-8 lg:pt-4">
+          
+          <div className="lg:pr-8 px-6 lg:px-8 lg:pt-4">
+          
+
               <div className="lg:max-w-lg">
                 <h2 className="text-base font-semibold leading-7 text-indigo-600">"music-first" production</h2>
                 <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">what I offer</p>
@@ -109,26 +116,23 @@ export default function Services() {
                   </div>
                   <div className="relative pl-9">
                     <dt className="inline font-semibold text-gray-900">
-                      <svg className="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                        <path fillRule="evenodd" d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z" clipRule="evenodd" />
-                      </svg>
+                    <FaSpotify className="absolute left-1 top-1 h-5 w-5 text-indigo-600" />
                       full-stack: 
                     </dt>
-                    <dd className="inline"> from pre-pro to mastering, I work with you at every step to shape your song/EP/LP from conception to release</dd>
+                    <dd className="inline"> from pre-pro to mastering, I work with you at every step to shape your song/EP/LP from concept to release</dd>
                   </div>
                   <div className="relative pl-9">
                     <dt className="inline font-semibold text-gray-900">
-                      <svg className="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                        <path d="M4.632 3.533A2 2 0 0 1 6.577 2h6.846a2 2 0 0 1 1.945 1.533l1.976 8.234A3.489 3.489 0 0 0 16 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234Z" />
-                        <path fillRule="evenodd" d="M4 13a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4Zm11.24 2a.75.75 0 0 1 .75-.75H16a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75h-.01a.75.75 0 0 1-.75-.75V15Zm-2.25-.75a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75h-.01Z" clipRule="evenodd" />
-                      </svg>
-                      Database backups.
+                    <PiFadersBold className="absolute left-1 top-1 h-5 w-5 text-indigo-600" />
+                      professional mixing and mastering: 
                     </dt>
-                    <dd className="inline">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</dd>
+                    <dd className="inline"> I ensure your track has the perfect balance and polish, optimizing it for streaming, radio, and any other distribution platform.</dd>
                   </div>
                 </dl>
               </div>
+              
             </div>
+
             <img loading="lazy" className="w-full max-h-screen object-cover" src={bulldog_bash_action_shot2} />
           </div>
         </div>
