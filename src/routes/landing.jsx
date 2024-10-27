@@ -91,7 +91,7 @@ export default function Landing() {
           <div className="md:hidden mt-4">
             <ul className="flex flex-col space-y-4">
               <li><a href="#listen" className="text-lg" onClick={() => setMenuOpen(false)}>listen</a></li>
-              <li><a href="#about" className="text-lg" onClick={() => setMenuOpen(false)}>about</a></li>
+              {/* <li><a href="#about" className="text-lg" onClick={() => setMenuOpen(false)}>about</a></li> */}
               <li><a href="#services" className="text-lg" onClick={() => setMenuOpen(false)}>services</a></li>
               <li><a href="#contact" className="text-lg" onClick={() => setMenuOpen(false)}>contact</a></li>
               <li>
