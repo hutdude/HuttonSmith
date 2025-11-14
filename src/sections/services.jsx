@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import bulldog_bash_action_shot from '../assets/BulldogBashAction.webp';
-import bulldog_bash_action_shot2 from '../assets/BulldogBashAction2.webp';
+import bulldog_bash_action_shot from '../assets/action-shot.jpeg';
+import bulldog_bash_action_shot2 from '../assets/action-shot.jpeg';
 import state_theatre from '../assets/StateTheatre.webp';
 import ricks from '../assets/Ricks.webp';
 

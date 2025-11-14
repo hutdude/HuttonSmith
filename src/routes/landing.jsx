@@ -1,4 +1,4 @@
-import bgimg from '../assets/Background.webp'
+import bgimg from '../assets/new-hero.jpeg'
 import React, { useState, useEffect, useRef } from 'react';
 import '../styles.css'
 import { RiYoutubeLine } from "react-icons/ri"; 
@@ -57,7 +57,7 @@ export default function Landing() {
         <div className="flex justify-between items-center">
           <div>
             <h1 className="text-3xl font-bold tracking-widest">HUTTON SMITH</h1>
-            <h2 className="text-md">PRODUCER • MIXER • SONGWRITER</h2>
+            <h2 className="text-md">BASSIST • PRODUCER • MIXER</h2>
           </div>
 
           {/* Hamburger button */}
